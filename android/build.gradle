@@ -1,29 +1,29 @@
 group 'com.alveliu.flutterfullpdfviewer'
 version '1.0.0'
-
+ 
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
-
+ 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.1'
     }
 }
-
+ 
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }
-
+ 
 apply plugin: 'com.android.library'
-
+ 
 android {
     compileSdkVersion 28
-
+ 
     defaultConfig {
         minSdkVersion 16
     }
@@ -31,7 +31,7 @@ android {
         disable 'InvalidPackage'
     }
 }
-
+ 
 dependencies {
-    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'com.github.mhiew:android-pdf-viewer:3.2.0-beta.1'
 }
